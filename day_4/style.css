@@ -1,0 +1,18 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: green;
+    padding: 16px;
+    box-shadow: 8px 0px 8px rgba(0, 0, 5, 0.2);
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
