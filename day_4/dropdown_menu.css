@@ -1,0 +1,38 @@
+:root {
+    background-color: black;
+    color: white;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+span {
+    padding: 16px;
+    background-color: green;
+    display: inline-block;
+}
+
+.dropdown div {
+    position: absolute;
+    background-color: white;
+    color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    display: none;
+}
+.dropdown div a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.dropdown div a:hover {
+    background-color: darkgray;
+}
+
+.dropdown:hover div {
+    display: block;
+}
