@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grad {
+            width: 600px;
+            height: 200px;
+            background: repeating-linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+        }
+        .radial {
+            margin-top: 20px;
+            background-image: radial-gradient(circle, red 5%, yellow 15%, green 60%);
+            width: 600px;
+            height: 200px;
+        }
+        .conic {
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+            background: conic-gradient(red, yellow, green, blue, black);
+        }
+        .pie {
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+            background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="grad"></div>
+    <div class="radial"></div>
+    <div class="conic"></div>
+    <div class="pie"></div>
+</body>
+</html>

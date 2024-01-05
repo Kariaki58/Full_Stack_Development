@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --hue: 10;
+        }
+        .container {
+            --width: 100px;
+            background-color: red;
+            height: 200px;
+            width: calc(var(--width) * 2);
+            margin: 0 auto;
+        }
+        .primary {
+            background-color: hsl(var(--hue), 100%, 50%);
+        }
+        .danger {
+            background-color: hsl(calc(var(--hue) - 100), 100%, 50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <button class="primary">Primary</button>
+    <button class="danger">danger</button>
+</body>
+</html>
