@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from flask_mail import Mail
 from dotenv import load_dotenv
+from flask_blog.errors.handlers import errors
 import os
 
 
@@ -39,3 +40,4 @@ from flask_blog.posts.routes import posts
 app.register_blueprint(users)
 app.register_blueprint(main)
 app.register_blueprint(posts)
+app.register_blueprint(errors)
